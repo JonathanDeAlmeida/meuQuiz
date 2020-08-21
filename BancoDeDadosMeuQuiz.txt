@@ -1,0 +1,18 @@
+// CRIANDO O BANCO //
+
+CREATE DATABASE meuquiz
+
+// CRIANDO TABELAS //
+
+CREATE TABLE usuario (
+
+id integer PRIMARY KEY AUTO_INCREMENT,
+
+login varchar (20) NOT NULL,
+ 
+senha varchar (20) NOT NULL,
+
+nome varchar(255) NOT NULL
+
+);
+
