@@ -21,12 +21,12 @@
             $resultado = @mysqli_query($conexao,$sql);
 
             if ($resultado === false){
-                echo "<h1>Erro ao Inserir Usuario</h1>";
+                return "Erro ao Inserir Usuario";
             } else {
-                echo "<h2>O usuario $nome foi cadastrado no sistema</h2>";
+                return "O usuario $nome foi cadastrado com sucesso";
             }
         } else {
-            echo "<h2>Usuário já cadastrado no sistema</h2>";
+            return "Usuário já cadastrado no sistema";
         }
     }
 
@@ -41,11 +41,9 @@
         $colunas = mysqli_num_rows($resultado);
 
         if ($colunas < 1){
-            echo "<h2>Usuario não registado</h2>";
-            echo "<a href=\"login.php\">Ir para login</a>";
+            return "Usuario não registrado";
         } else {
-            echo "<h2>Logado com Sucesso!</h2>";
-            // header("Location: ../vendas/vendaAdministrador.php");
+            return "UsuarioRegistrado";
         }
     }
 ?>
