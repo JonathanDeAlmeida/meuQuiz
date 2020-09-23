@@ -22,7 +22,7 @@
           success: function (msg)
           {
             if (msg === 'UsuarioRegistrado') {
-              window.location.href = "../Telas que precisam de programação/principal.html";
+              window.location.href = "../principal/principal.php";
             } else {
               alert(msg)
             }

@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar navbar-dark navbar-expand-sm">
   <div class="container">
-    <a class="navbar-brand" href="principal.html">
+    <a class="navbar-brand" href="../principal/principal.php">
       <span class="logo">MEU</span>quiz</a>
     <button class="navbar-toggler">
       <span class="navbar-toggler-icon"></span>
@@ -17,10 +17,10 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="criar.html"> CRIAR </a>
+          <a class="nav-link" href="cadastro.php"> CRIAR </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../usuario/login.html">SAIR </a>
+          <a class="nav-link" href="../login/login.php">SAIR </a>
         </li>
       </ul>
       <form class="form-inline my-3 pt-2 my-lg-0">
@@ -28,7 +28,7 @@
         <button class="btn btn-white mb-2" type="submit">
           <i class="fa fa-search"></i>
         </button>
-        <h6 class="user-name" href="../usuario/login.html">LUCAS </h6>
+        <h6 class="user-name" href="../login/login.php">LUCAS </h6>
       </form>
     </div>
   </div>
@@ -59,19 +59,19 @@
         <h5 class="card-header card-quiz">Perguntas</h5>
         <div class="card-body">
           <h6>Nenhuma pergunta adicionada até o momento</h6>
-          <a href="criarPergunta.html" class="btn btn-primary mt-2">Adicionar Pergunta </a>
+          <a href="../pergunta/cadastro.php" class="btn btn-primary mt-2">Adicionar Pergunta </a>
         </div>
       </div>
       <div class="card">
         <h5 class="card-header card-quiz">Resultados</h5>
         <div class="card-body">
           <h6>Nenhum resultado adicionado até o momento</h6>
-          <a href="criarResultado.html" class="btn btn-primary mt-2">Adicionar Resultado </a>
+          <a href="../resultado/cadastro.php" class="btn btn-primary mt-2">Adicionar Resultado </a>
         </div>
       </div>
       <div class="mb-5 mt-5 row">
         <div class="col-md-6">
-          <a href="principal.html" class="btn btn-secondary btn-action w-100">Cancelar</a>
+          <a href="../principal/principal.php" class="btn btn-secondary btn-action w-100">Cancelar</a>
         </div>
         <div class="col-md-6">
           <button class="btn btn-primary btn-action w-100">SALVAR</button>

@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>criarPergunta</title>
+  <title>criarResultado</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <meta charset="utf-8">
   <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar navbar-dark navbar-expand-sm">
   <div class="container">
-    <a class="navbar-brand" href="principal.html">
+    <a class="navbar-brand" href="../principal/principal.php">
       <span class="logo">MEU</span>quiz</a>
     <button class="navbar-toggler">
       <span class="navbar-toggler-icon"></span>
@@ -17,10 +17,10 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="criar.html"> CRIAR </a>
+          <a class="nav-link" href="../quiz/cadastro.php"> CRIAR </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../usuario/login.html">SAIR </a>
+          <a class="nav-link" href="../login/login.php">SAIR </a>
         </li>
       </ul>
       <form class="form-inline my-3 pt-2 my-lg-0">
@@ -28,7 +28,7 @@
         <button class="btn btn-white mb-2" type="submit">
           <i class="fa fa-search"></i>
         </button>
-        <h6 class="user-name" href="../usuario/login.html">LUCAS </h6>
+        <h6 class="user-name" href="../login/login.php">LUCAS </h6>
       </form>
     </div>
   </div>
@@ -39,27 +39,26 @@
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-6">
-          <div class="add-image question text-center">
+          <div class="add-image text-center">
             <button class="btn btn-purple">ADICIONAR IMAGEM</button>
           </div>
         </div>
         <div class="col-md-6">
-          <textarea class="form-control w-100" rows="9" placeholder="Escreva pergunta..."></textarea>
+          <div class="mt-2">
+            <input class="form-control w-100 d-inline" placeholder="Escreva titulo...">
+          </div>
+          <textarea class="form-control w-100" rows="7" placeholder="Escreva descrição..."></textarea>
         </div>
       </div>
-      <input class="form-control w-95 d-inline" placeholder="Escreva resposta...">
-      <button class="btn btn-primary mb-1">
-        <i class="fa fa-plus"></i>
-      </button>
       <div class="card mt-5">
-        <h5 class="card-header card-quiz">Lista de Perguntas</h5>
+        <h5 class="card-header card-quiz">Lista de Resultados</h5>
         <div class="card-body">
-          <h6>Nenhuma pergunta adicionada até o momento</h6>
+          <h6>Nenhum resultado adicionado até o momento</h6>
         </div>
       </div>
       <div class="mb-5 mt-5 row">
         <div class="col-md-6">
-          <a href="criar.html" class="btn btn-secondary btn-action w-100">Cancelar</a>
+          <a href="../quiz/cadastro.php" class="btn btn-secondary btn-action w-100">Cancelar</a>
         </div>
         <div class="col-md-6">
           <button class="btn btn-primary btn-action w-100">SALVAR</button>
@@ -68,5 +67,6 @@
     </div>
   </div>
 </div>
+
 </body>
 </html>

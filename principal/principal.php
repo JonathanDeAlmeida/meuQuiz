@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar navbar-dark navbar-expand-sm">
   <div class="container">
-    <a class="navbar-brand" href="principal.html">
+    <a class="navbar-brand" href="principal.php">
       <span class="logo">MEU</span>quiz</a>
     <button class="navbar-toggler">
       <span class="navbar-toggler-icon"></span>
@@ -17,10 +17,10 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="criar.html"> CRIAR </a>
+          <a class="nav-link" href="../quiz/cadastro.php"> CRIAR </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../usuario/login.html">SAIR </a>
+          <a class="nav-link" href="../login/login.php">SAIR </a>
         </li>
       </ul>
       <form class="form-inline my-3 pt-2 my-lg-0">
@@ -28,7 +28,7 @@
         <button class="btn btn-white mb-2" type="submit">
           <i class="fa fa-search"></i>
         </button>
-        <h6 class="user-name" href="../usuario/login.html">LUCAS </h6>
+        <h6 class="user-name" href="../login/login.php">LUCAS </h6>
       </form>
     </div>
   </div>
