@@ -1,6 +1,6 @@
 <?php
-require_once('biblioteca_banco_pergunta.php');
-$acao = isset($_REQUEST['acao'])?$_REQUEST['acao']:'cadastro';
+require_once('biblioteca_banco_principal.php');
+$acao = isset($_REQUEST['acao'])?$_REQUEST['acao']:'principal';
 
 switch($acao){
     case 'inserir':
@@ -11,8 +11,8 @@ switch($acao){
         $mensagem = inserirUsuario($nome, $login, $senha);
         echo $mensagem;
         break;
-    case 'cadastro':
-        include("cadastro.php");
+    case 'principal':
+        include("principal.php");
         break;
     case 'verificaLogin':
         if (isset($_POST)) {
@@ -23,3 +23,4 @@ switch($acao){
         }
         break;
 }
+
