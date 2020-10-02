@@ -8,11 +8,108 @@ CREATE TABLE usuario (
 
 id integer PRIMARY KEY AUTO_INCREMENT,
 
-login varchar (20) NOT NULL,
- 
-senha varchar (20) NOT NULL,
+nome varchar(255) NOT NULL,
 
-nome varchar(255) NOT NULL
+login varchar (255) NOT NULL,
+
+senha varchar (255) NOT NULL,
+
+email varchar(255) NULL,
+
+autenticado boolean NULL
 
 );
+
+
+CREATE TABLE quiz (
+
+id integer PRIMARY KEY AUTO_INCREMENT,
+
+titulo varchar(255) NOT NULL,
+
+descricao varchar (500) NOT NULL,
+ 
+imagem varchar (500) NOT NULL,
+
+criador_id integer NOT NULL
+
+);
+
+CREATE TABLE pergunta (
+
+id integer PRIMARY KEY AUTO_INCREMENT,
+
+pergunta varchar (500) NOT NULL,
+ 
+imagem varchar (500) NOT NULL,
+
+quiz_id integer NOT NULL
+
+);
+
+CREATE TABLE alternativa (
+
+id integer PRIMARY KEY AUTO_INCREMENT,
+
+alternativa varchar (255) NOT NULL,
+
+correta boolean NOT NULL,
+
+pergunta_id integer NOT NULL
+
+);
+
+CREATE TABLE pontos (
+
+id integer PRIMARY KEY AUTO_INCREMENT,
+
+pontos integer NOT NULL,
+
+usuario_id integer NOT NULL,
+
+quiz_id integer NOT NULL
+
+);
+
+CREATE TABLE resultado (
+
+id integer PRIMARY KEY AUTO_INCREMENT,
+
+titulo varchar(255) NOT NULL,
+
+descricao varchar (500) NOT NULL,
+
+imagem varchar (500) NOT NULL,
+
+pontos integer NOT NULL,
+
+quiz_id integer NOT NULL
+
+);
+
+CREATE TABLE avaliacao (
+
+id integer PRIMARY KEY AUTO_INCREMENT,
+
+comentario varchar (500) NOT NULL,
+
+nota integer NOT NULL,
+
+usuario_id integer NOT NULL,
+
+quiz_id integer NOT NULL
+
+);
+
+ALTER TABLE pergunta ADD CONSTRAINT fk_quiz FOREIGN KEY (quiz_id) REFERENCES quiz(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE alternativa ADD CONSTRAINT fk_pergunta FOREIGN KEY (pergunta_id) REFERENCES pergunta(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE pontos ADD CONSTRAINT fk_usuario FOREIGN KEY (usuario_id) REFERENCES usuario(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE pontos ADD CONSTRAINT fk_quiz FOREIGN KEY (quiz_id) REFERENCES quiz(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE resultado ADD CONSTRAINT fk_quiz FOREIGN KEY (quiz_id) REFERENCES quiz(id) ON UPDATE CASCADE ON DELETE CASCADE;
+
+ALTER TABLE avaliacao ADD CONSTRAINT fk_quiz FOREIGN KEY (quiz_id) REFERENCES quiz(id) ON UPDATE CASCADE ON DELETE CASCADE;
 

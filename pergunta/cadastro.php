@@ -38,13 +38,11 @@
   <div class="row">
     <div class="col-md-12">
       <div class="row">
-        <div class="col-md-6">
-          <div class="add-image question text-center">
-            <button class="btn btn-purple">ADICIONAR IMAGEM</button>
-          </div>
+        <div class="col-md-12 mb-4">
+          <input class="form-control d-inline" placeholder="Coloque o link da imagem...">
         </div>
-        <div class="col-md-6">
-          <textarea class="form-control w-100" rows="9" placeholder="Escreva pergunta..."></textarea>
+        <div class="col-md-12 mb-2">
+          <textarea class="form-control w-100" rows="5" placeholder="Escreva pergunta..."></textarea>
         </div>
       </div>
       <input class="form-control w-95 d-inline" placeholder="Escreva resposta...">

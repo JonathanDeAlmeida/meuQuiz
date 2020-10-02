@@ -38,21 +38,14 @@
   <div class="row">
     <div class="col-md-12">
       <div class="row mb-5">
-        <div class="col-md-6">
-          <div class="add-image text-center">
-            <button class="btn btn-purple">ADICIONAR IMAGEM</button>
-          </div>
+        <div class="col-md-12 mb-4">
+          <input class="form-control d-inline" placeholder="Coloque o link da imagem...">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="mt-2">
             <input class="form-control w-100 d-inline" placeholder="Escreva titulo...">
-            <!--
-            <button class="btn btn-primary mb-1">
-              <i class="fa fa-plus"></i>
-            </button>
-            -->
           </div>
-          <textarea class="form-control w-100" rows="7" placeholder="Escreva descrição..."></textarea>
+          <textarea class="form-control w-100" rows="5" placeholder="Escreva descrição..."></textarea>
         </div>
       </div>
       <div class="card">
