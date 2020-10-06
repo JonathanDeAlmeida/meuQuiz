@@ -2,7 +2,7 @@
 
 function obterConexao()
 {
-    $conexao = mysqli_connect('127.0.0.1', 'root', '', 'meuquiz') or die('Erro ao conectar ao banco de dados');
+    $conexao = mysqli_connect('127.0.0.1', 'root','', 'meuquiz') or die('Erro ao conectar ao banco de dados');
     return $conexao;
 }
 
