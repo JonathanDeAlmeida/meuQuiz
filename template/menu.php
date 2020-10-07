@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION["nome"])){
+    $autenticado = false;
+}else{
+    $autenticado = true;
+}
+?>
 <nav class="navbar navbar-dark navbar-expand-sm">
     <div class="container">
         <a class="navbar-brand" href="principal.php">
@@ -11,7 +19,7 @@
                     <a class="nav-link" href="../quiz/cadastro.php"> CRIAR </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../login/login.php">SAIR </a>
+                    <a class="nav-link" href="../login/index.php?acao=sair">SAIR </a>
                 </li>
             </ul>
             <form class="form-inline my-3 pt-2 my-lg-0">
@@ -21,7 +29,13 @@
                 </button>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../login/login.php"> Login </a>
+                        <a class="nav-link" href="../login/login.php"> <?php
+                            if($autenticado){
+                                echo $_SESSION["nome"];
+                            }else{
+                                echo "login";
+                            }
+                            ?> </a>
                     </li>
                 </ul>
             </form>
