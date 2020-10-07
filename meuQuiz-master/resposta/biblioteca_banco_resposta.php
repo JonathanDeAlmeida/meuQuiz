@@ -46,12 +46,4 @@ function verificaUsuario($login, $senha) {
         return "UsuarioRegistrado";
     }
 }
-
-function criarQuiz($titulo, $descricao, $imagem, $criador){
-    $conexao = obterConexao();
-    $sql = "INSERT INTO quiz (titulo,descricao,imagem,criador_id) VALUES ('$titulo','$descricao','$imagem',$criador)";
-    var_dump($sql);
-    mysqli_query($conexao,$sql);
-    echo "<script>location.href='../principal/principal.php';</script>";
-}
 ?>

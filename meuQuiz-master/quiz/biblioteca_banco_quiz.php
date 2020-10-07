@@ -1,6 +1,6 @@
 <?php
 function obterConexao(){
-    $conexao = mysqli_connect('127.0.0.1','root','','meuquiz') or die('Erro ao conectar ao banco de dados');
+    $conexao = mysqli_connect('127.0.0.1','root','root_2626','meuquiz') or die('Erro ao conectar ao banco de dados');
     return $conexao;
 }
 
@@ -45,13 +45,5 @@ function verificaUsuario($login, $senha) {
     } else {
         return "UsuarioRegistrado";
     }
-}
-
-function criarQuiz($titulo, $descricao, $imagem, $criador){
-    $conexao = obterConexao();
-    $sql = "INSERT INTO quiz (titulo,descricao,imagem,criador_id) VALUES ('$titulo','$descricao','$imagem',$criador)";
-    var_dump($sql);
-    mysqli_query($conexao,$sql);
-    echo "<script>location.href='../principal/principal.php';</script>";
 }
 ?>

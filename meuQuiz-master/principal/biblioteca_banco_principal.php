@@ -1,10 +1,13 @@
 <?php
-function obterConexao(){
-    $conexao = mysqli_connect('127.0.0.1','root','','meuquiz') or die('Erro ao conectar ao banco de dados');
+
+function obterConexao()
+{
+    $conexao = mysqli_connect('127.0.0.1', 'root','', 'meuquiz') or die('Erro ao conectar ao banco de dados');
     return $conexao;
 }
 
-function inserirUsuario ($nome, $login, $senha) {
+function inserirUsuario($nome, $login, $senha)
+{
 
     $conexao = obterConexao();
 
@@ -14,13 +17,13 @@ function inserirUsuario ($nome, $login, $senha) {
 
     $colunas = mysqli_num_rows($resultado);
 
-    if ($colunas < 1){
+    if ($colunas < 1) {
 
         $sql = "INSERT INTO usuario (nome,login,senha) VALUES ('$nome','$login','$senha')";
 
-        $resultado = @mysqli_query($conexao,$sql);
+        $resultado = @mysqli_query($conexao, $sql);
 
-        if ($resultado === false){
+        if ($resultado === false) {
             return "Erro ao Inserir Usuario";
         } else {
             return "O usuario $nome foi cadastrado com sucesso";
@@ -30,7 +33,8 @@ function inserirUsuario ($nome, $login, $senha) {
     }
 }
 
-function verificaUsuario($login, $senha) {
+function verificaUsuario($login, $senha)
+{
 
     $conexao = obterConexao();
 
@@ -40,18 +44,10 @@ function verificaUsuario($login, $senha) {
 
     $colunas = mysqli_num_rows($resultado);
 
-    if ($colunas < 1){
+    if ($colunas < 1) {
         return "Usuario não registrado";
     } else {
         return "UsuarioRegistrado";
     }
 }
 
-function criarQuiz($titulo, $descricao, $imagem, $criador){
-    $conexao = obterConexao();
-    $sql = "INSERT INTO quiz (titulo,descricao,imagem,criador_id) VALUES ('$titulo','$descricao','$imagem',$criador)";
-    var_dump($sql);
-    mysqli_query($conexao,$sql);
-    echo "<script>location.href='../principal/principal.php';</script>";
-}
-?>

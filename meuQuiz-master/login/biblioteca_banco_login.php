@@ -31,7 +31,9 @@
     }
 
     function verificaUsuario($login, $senha) {
+
         $conexao = obterConexao();
+
         $sql = "SELECT id, login, senha FROM usuario WHERE login = '$login' and senha = '$senha'";
 
         $resultado = @mysqli_query($conexao, $sql);
@@ -41,23 +43,7 @@
         if ($colunas < 1){
             return "Usuario não registrado";
         } else {
-            session_start();
-            $_SESSION = exibirUsuario($login);
             return "UsuarioRegistrado";
         }
-    }
-
-    function exibirUsuario($login){
-        $conexao = obterConexao();
-        $sql = "select id,nome,login,senha,email from usuario where login = '$login'";
-        $resultado = mysqli_query($conexao,$sql);
-        $a = mysqli_fetch_all($resultado)[0];
-        return array(
-            "id" => $a[0],
-            "nome" => $a[1],
-            "login" => $a[2],
-            "senha" => $a[3],
-            "email" => $a[4]
-        );
     }
 ?>

@@ -2,7 +2,7 @@
 
 function obterConexao()
 {
-    $conexao = mysqli_connect('127.0.0.1', 'root', '', 'meuquiz') or die('Erro ao conectar ao banco de dados');
+    $conexao = mysqli_connect('127.0.0.1', 'root','', 'meuquiz') or die('Erro ao conectar ao banco de dados');
     return $conexao;
 }
 
@@ -49,5 +49,30 @@ function verificaUsuario($login, $senha)
     } else {
         return "UsuarioRegistrado";
     }
+}
+function listarQuiz($id){
+    $conexao = obterConexao();
+    $sql = "SELECT id, titulo, descricao, imagem, criador_id FROM quiz WHERE id = '$id'";
+    $resultado = mysqli_query($conexao,$sql);
+    $resultado = mysqli_fetch_all($resultado)[0];
+    return array(
+        "id"=>$resultado[0],
+        "titulo"=>$resultado[1],
+        "descricao"=>$resultado[2],
+        "imagem"=>$resultado[3],
+        "criador"=>$resultado[4],
+    );
+}
+function exibirQuiz($id){
+    $quiz = listarQuiz($id);
+    return "<div class='col-md-6'>
+            <img class='w-100 img-quiz'
+                 src='$quiz[imagem]'
+                 height='320'/>
+            <div class='title-quiz'>
+                $quiz[titulo]
+                <button class='float-right btn btn-primary'>INICIAR</button>
+            </div>
+        </div>";
 }
 

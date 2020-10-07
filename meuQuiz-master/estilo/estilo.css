@@ -1,0 +1,249 @@
+.btn-purple {
+    background: #007bff;
+    color: white;
+}
+
+.container {
+    position: relative;
+}
+
+.mt-20 {
+    margin-bottom: 20px;
+}
+
+.title-quiz {
+    background: #dcdcdc;
+    padding: 10px 10px 20px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-action {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.add-image {
+    background: #e0e0e0;
+    border-radius: 10px;
+    padding: 100px;
+    margin-bottom: 10px;
+}
+
+.add-image.question {
+    padding: 97px 100px;
+}
+
+.btn-purple:hover {
+    color: white;
+}
+
+.btn-white {
+    background: white;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+strong {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+input {
+    display: inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+select {
+    width: 50%;
+    height: 30px;
+}
+
+p {
+    text-align: center;
+}
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.navbar-brand {
+    font-family: fantasy;
+    font-size: 30px;
+}
+
+.navbar-brand:hover {
+    color: #007bff !important;
+}
+
+.border-register {
+    border: 1px solid #007bff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.logo-register {
+    color: #007bff;
+    text-transform: uppercase;
+    font-family: fantasy;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.logo-register p {
+    color: #007bff;
+    display: inline;
+    font-size: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none !important;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: white;
+}
+
+.user-name {
+    margin-left: 20px;
+    color: white;
+}
+
+.linkCadastro {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.linkCadastro:hover {
+    color: #007bff;
+}
+
+.position-questions {
+    background: #dcdcdc;
+    padding: 5px;
+}
+
+.btn-position {
+    color: black;
+    border: 1px solid #a8a8a8;
+    font-weight: bold;
+}
+
+.btn-position.active{
+    background: #007bff;
+    color: white;
+    border-color: white;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.linkLogin {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.linkLogin:hover {
+    color: #007bff;
+}
+
+.answer-quiz {
+    background-color: #dcdcdc;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.result-quiz {
+    background-color: #dcdcdc;
+    padding: 10px;
+}
+.card {
+    margin-bottom: 20px;
+}
+.card-quiz {
+    background: #007bff;
+    color: white;
+}
+
+.logo {
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+.btn-share {
+    background: #007bff;
+    border: 1px solid ;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: unset;
+    padding: 10px;
+}
+.btn-answer {
+    border: 1px solid #a8a8a8;
+    width: 32%;
+    color: black;
+    font-weight: bold;
+    border-radius: unset;
+    padding: 10px;
+}
+
+.btn-answer:hover {
+    color: white;
+    background: #007bff;
+    border-color: white;
+}
+
+.result-description {
+    font-weight: 600;
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+}
+
+.navbar {
+    background-color: #007bff;
+    padding: 0
+}
+
+.navbar .nav-item a {
+    padding: 23px 0;
+    font-weight: bold;
+    color: white !important;
+}
+
+.navbar .nav-item a:hover {
+    color: #007bff !important;
+}
+
+.navbar a {
+    padding: 5px;
+}
+.navbar a:hover {
+    background-color: white;
+}
+
+.btn-primary i {
+    color: white;
+}
+i {
+    color: #007bff;
+    padding: 0;
+    font-size: 24px;
+}
