@@ -50,29 +50,38 @@ function verificaUsuario($login, $senha)
         return "UsuarioRegistrado";
     }
 }
-function listarQuiz($id){
+function listarQuizzes(){
     $conexao = obterConexao();
-    $sql = "SELECT id, titulo, descricao, imagem, criador_id FROM quiz WHERE id = '$id'";
-    $resultado = mysqli_query($conexao,$sql);
-    $resultado = mysqli_fetch_all($resultado)[0];
-    return array(
-        "id"=>$resultado[0],
-        "titulo"=>$resultado[1],
-        "descricao"=>$resultado[2],
-        "imagem"=>$resultado[3],
-        "criador"=>$resultado[4],
-    );
+    $sql = "SELECT id, titulo, descricao, imagem, criador_id FROM quiz";
+    $resultado = mysqli_fetch_all(mysqli_query($conexao,$sql));
+    $retorno = array();
+    $cont = 0;
+    foreach ($resultado as $resultados){
+        $retorno[$cont] = array(
+                        "id"=>$resultados[0],
+                        "titulo"=>$resultados[1],
+                        "descricao"=>$resultados[2],
+                        "imagem"=>$resultados[3],
+                        "criador"=>$resultados[4],
+                       );
+        $cont++;
+    }
+    return $retorno;
 }
-function exibirQuiz($id){
-    $quiz = listarQuiz($id);
-    return "<div class='col-md-6'>
-            <img class='w-100 img-quiz'
-                 src='$quiz[imagem]'
-                 height='320'/>
-            <div class='title-quiz'>
-                $quiz[titulo]
-                <button class='float-right btn btn-primary'>INICIAR</button>
-            </div>
-        </div>";
+function exibirQuizzes(){
+    $quiz = listarQuizzes();
+    $retorno = "";
+    foreach ($quiz as $quizzes){
+        $retorno = $retorno."<div class='col-md-6'>
+                                <img class='w-100 img-quiz'
+                                     src='$quizzes[imagem]'
+                                     height='320'/>
+                                <div class='title-quiz'>
+                                    $quizzes[titulo]
+                                    <button class='float-right btn btn-primary'>INICIAR</button>
+                                </div>
+                            </div>";
+    }
+    return $retorno;
 }
 
