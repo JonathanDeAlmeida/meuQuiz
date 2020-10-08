@@ -17,10 +17,7 @@ include "../template/menu.php";
 <div class="container mt-70">
     <div class="row">
         <?=
-        exibirQuiz(3);
-        ?>
-        <?=
-        exibirQuiz(5)
+        exibirQuizzes();
         ?>
     </div>
     <div class="row mt-70">

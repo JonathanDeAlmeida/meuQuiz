@@ -3,8 +3,12 @@
     <?php
         require_once "biblioteca_banco_quiz.php";
         if(isset($_REQUEST["titulo"]) && isset($_REQUEST["descricao"]) && isset($_REQUEST["imagem"])){
-            session_start();
-            criarQuiz($_REQUEST["titulo"], $_REQUEST["descricao"], $_REQUEST["imagem"], $_SESSION["id"]);
+                session_start();
+                criarQuiz($_REQUEST["titulo"], $_REQUEST["descricao"], $_REQUEST["imagem"], $_SESSION["id"]);
+        }
+        session_start();
+        if(!isset($_SESSION["nome"])){
+            echo "<script>location.href='../principal/principal.php';</script>";
         }
     ?>
     <title>criar</title>
@@ -14,25 +18,26 @@
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../estilo/estilo.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="biblioteca.js"></script>
 </head>
 <body>
 <?php
     include "../template/menu.php";
 ?>
 
-<form method="post">
+<form method="post" name="cadastro" onsubmit="verificar(this)">
     <div class="container mt-70">
         <div class="row">
             <div class="col-md-12">
                 <div class="row mb-5">
                     <div class="col-md-12 mb-4">
-                        <input class="form-control d-inline" placeholder="Coloque o link da imagem..." max="500" name="imagem">
+                        <input class="form-control d-inline" placeholder="Coloque o link da imagem..." name="imagem" id="imagem" autocomplete="off">
                     </div>
                     <div class="col-md-12">
                         <div class="mt-2">
-                            <input class="form-control w-100 d-inline" placeholder="Escreva titulo..." name="titulo">
+                            <input class="form-control w-100 d-inline" placeholder="Escreva titulo..." name="titulo" id="titulo" autocomplete="off">
                         </div>
-                        <textarea class="form-control w-100" rows="5" placeholder="Escreva descrição..." name="descricao"></textarea>
+                        <textarea class="form-control w-100" rows="5" placeholder="Escreva descrição..." name="descricao" id="descricao" autocomplete="off"></textarea>
                     </div>
                 </div>
             </div>
