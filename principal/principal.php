@@ -1,7 +1,7 @@
 <html>
 <head>
     <?php
-        require "biblioteca_banco_principal.php";
+      require_once('biblioteca_banco_principal.php');
     ?>
     <title>principal</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"

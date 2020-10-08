@@ -14,27 +14,6 @@
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../estilo/estilo.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-    <script>
-        function adicionarAlternativa(){
-            $("table").append(
-                "<tr id=\"alternativa\">\n" +
-                "<div>\n" +
-                " <td><input class=\"form-control w-100 d-inline\" placeholder=\"Alternativa\"></td>\n" +
-                "<td><input class=\"\" type=\"checkbox\"></td>\n" +
-                "</div>\n" +
-                "</tr>");
-        }
-        function adicionarPergunta(){
-            $("table").append(
-                "<tr id=\"alternativa\">\n" +
-                "<div>\n" +
-                " <td><input class=\"form-control w-100 d-inline\" placeholder=\"Alternativa\"></td>\n" +
-                "<td><input class=\"\" type=\"checkbox\"></td>\n" +
-                "</div>\n" +
-                "</tr>");
-        }
-    </script>
 </head>
 <body>
 <?php
@@ -54,26 +33,6 @@
                             <input class="form-control w-100 d-inline" placeholder="Escreva titulo..." name="titulo">
                         </div>
                         <textarea class="form-control w-100" rows="5" placeholder="Escreva descrição..." name="descricao"></textarea>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="card-header card-quiz">Perguntas</h5>
-                    <div class="card-body">
-                        <h6>Pergunta</h6>
-                        <input class="form-control w-100 d-inline" placeholder="Pergunta" name="pergunta">
-                        <table style="width:100%">
-                            <tr>
-                                <th>Alternativa</th>
-                                <th>Correta</th>
-                            </tr>
-                            <tr id="alternativa">
-                                <div>
-                                    <td><input class="form-control w-100 d-inline" placeholder="Alternativa" name="alternativa[]"></td>
-                                    <td><input class="" type="checkbox" name="resposta[]"></td>
-                                </div>
-                            </tr>
-                        </table>
-                        <input type="button" onclick="adicionarAlternativa()" value="Adicionar pergunta">
                     </div>
                 </div>
             </div>
