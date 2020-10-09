@@ -78,7 +78,9 @@ function exibirQuizzes(){
                                      height='320'/>
                                 <div class='title-quiz'>
                                     $quizzes[titulo]
-                                    <button class='float-right btn btn-primary'>INICIAR</button>
+                                    <form method='post' action='../jogar/index.php'>
+                                    <button name='quizId' value='$quizzes[id]' class='float-right btn btn-primary'>INICIAR</button>
+                                    </form>
                                 </div>
                             </div>";
     }
