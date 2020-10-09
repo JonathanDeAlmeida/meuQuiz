@@ -4,29 +4,23 @@ function obterConexao(){
     return $conexao;
 }
 
-function inserirUsuario ($nome, $login, $senha) {
+function inserirResultados ($resultados, $quiz_id) {
 
     $conexao = obterConexao();
-
-    $sql = "SELECT nome, login, senha FROM usuario WHERE nome = '$nome' and login = '$login' and senha = '$senha'";
-
-    $resultado = @mysqli_query($conexao, $sql);
-
-    $colunas = mysqli_num_rows($resultado);
-
-    if ($colunas < 1){
-
-        $sql = "INSERT INTO usuario (nome,login,senha) VALUES ('$nome','$login','$senha')";
-
+    $count = 0;
+    foreach ($resultados as $index => $result) {
+        $count++;
+        $titulo = $result['titulo'];
+        $descricao = $result['descricao'];
+        $link = $result['link'];
+        $sql = "INSERT INTO resultado (titulo,descricao,imagem, pontos, quiz_id) VALUES ('$titulo','$descricao','$link', '$count', $quiz_id)";
         $resultado = @mysqli_query($conexao,$sql);
+    }
 
-        if ($resultado === false){
-            return "Erro ao Inserir Usuario";
-        } else {
-            return "O usuario $nome foi cadastrado com sucesso";
-        }
+    if ($resultado === false){
+        return "Erro ao cadastrar resultados";
     } else {
-        return "Usuário já cadastrado no sistema";
+        return "Os resultados foram cadastrados com sucesso";
     }
 }
 

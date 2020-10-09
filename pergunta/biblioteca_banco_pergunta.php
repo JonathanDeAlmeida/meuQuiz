@@ -4,18 +4,43 @@ function obterConexao(){
     return $conexao;
 }
 
-function inserirPergunta($link, $pergunta, $alternativas) {
+function inserirPergunta($perguntas, $alternativas, $quiz_id) {
 
     $conexao = obterConexao();
+    $ids = [];
+    foreach ($perguntas as $pergun) {
+        $pergunta = $pergun['pergunta'];
+        $link = $pergun['link'];
+        $sql = "INSERT INTO pergunta (pergunta,imagem,quiz_id) VALUES ('$pergunta','$link', '$quiz_id')";
+        @mysqli_query($conexao,$sql);
+        $id = mysqli_insert_id($conexao);
+        array_push($ids, $id);
+    }
 
-    $sql = "INSERT INTO pergunta (pergunta,imagem,quiz_id) VALUES ('$pergunta','$link', 1)";
-
-    $resultado = @mysqli_query($conexao,$sql);
-
-    $id = mysqli_insert_id($conexao);
+    $array = [];
 
     foreach ($alternativas as $alter) {
-        $sqlDois = "INSERT INTO alternativa (alternativa, correta, pergunta_id) VALUES ('$alter', true, '$id')";
+        if ($alter['check'] == 'true') {
+            $alter['check'] = 1;
+        } else {
+            $alter['check'] = 0;
+        }
+        array_push($array, $alter);
+    }
+    foreach ($array as $index => $alter) {
+        if ($index < 4) {
+            $pergunta_id = $ids[0];
+        } else if ($index < 8) {
+            $pergunta_id = $ids[1];
+        } else {
+            $pergunta_id = $ids[2];
+        }
+
+        $alternativa = $alter['alternativa'];
+        $check = $alter['check'];
+
+        $sqlDois = "INSERT INTO alternativa (alternativa, correta, pergunta_id) VALUES ('$alternativa', '$check', '$pergunta_id')";
+
         $resultadoDois = @mysqli_query($conexao, $sqlDois);
     }
 

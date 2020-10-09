@@ -51,6 +51,9 @@ function criarQuiz($titulo, $descricao, $imagem, $criador){
     $conexao = obterConexao();
     $sql = "INSERT INTO quiz (titulo,descricao,imagem,criador_id) VALUES ('$titulo','$descricao','$imagem',$criador)";
     mysqli_query($conexao,$sql);
-    echo "<script>location.href='../principal/principal.php';</script>";
+    $id = mysqli_insert_id($conexao);
+
+    echo "<script>localStorage.setItem('quiz_id', '$id')</script>";
+    echo "<script>location.href='../pergunta/cadastro.php';</script>";
 }
 ?>

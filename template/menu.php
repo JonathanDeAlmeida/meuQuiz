@@ -6,6 +6,11 @@ if(!isset($_SESSION["nome"])){
     $autenticado = true;
 }
 ?>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<meta charset="utf-8">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../estilo/estilo.css" rel="stylesheet">
+<script src="../jquery-3.5.1.min.js" type="text/javascript"></script>
 <nav class="navbar navbar-dark navbar-expand-sm">
     <div class="container">
         <a class="navbar-brand" href="../principal/principal.php">

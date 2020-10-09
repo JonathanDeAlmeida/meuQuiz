@@ -1,97 +1,197 @@
 <html>
 <head>
   <title>criarPergunta</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-  <meta charset="utf-8">
-  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <script src="../jquery-3.5.1.min.js" type="text/javascript"></script>
-  <link href="../estilo/estilo.css" rel="stylesheet">
 </head>
 <body>
 <?php
 include "../template/menu.php";
 ?>
-
 <div class="container mt-70">
   <div class="row">
     <div class="col-md-12">
       <div class="row">
-        <div class="card">
-          <h5 class="card-header card-quiz">Perguntas</h5>
-          <div class="card-body">
-            <h6>Pergunta</h6>
-            <input class="form-control w-100 d-inline"
-                   placeholder="Coloque o link da imagem aqui..."
-                   name="link">
-            <input class="form-control w-100 d-inline" placeholder="Pergunta" name="pergunta">
-            <table style="width:100%">
-              <tr>
-                <th>Alternativa</th>
-                <th>Correta</th>
-              </tr>
-              <tr id="alternativa">
-              </tr>
-            </table>
-            <input class="btn btn-purple" value="adicionar" type="button" onclick="adicionarAlternativa()">
-            <button class="btn btn-primary" onclick="return salvarPergunta()">salvar</button>
+        <div class="card-group">
+          <div class="card">
+            <h5 class="card-header card-quiz">Perguntas</h5>
+            <div class="card-body">
+              <input class="form-control w-100 d-inline link"
+                     placeholder="Coloque o link da imagem aqui..."
+                     name="link">
+              <input class="form-control w-100 d-inline pergunta" placeholder="Pergunta" name="pergunta">
+              <table style="width:100%">
+                <tr>
+                  <th>Alternativa</th>
+                  <th>Correta</th>
+                </tr>
+                <tr id="alternativa">
+                  <td>
+                    <input class="form-control w-100 d-inline alternativa">
+                    <input class="form-control w-100 d-inline alternativa">
+                    <input class="form-control w-100 d-inline alternativa">
+                    <input class="form-control w-100 d-inline alternativa">
+                  </td>
+                  <td>
+                    <input name="resposta" class="resposta d-inline check1" type="checkbox">
+                    <input name="resposta" class="resposta d-inline check2" type="checkbox">
+                    <input name="resposta" class="resposta d-inline check3" type="checkbox">
+                    <input name="resposta" class="resposta d-inline check4" type="checkbox">
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
-        </div>
-
-      </div>
-      <div class="card mt-5">
-        <h5 class="card-header card-quiz">Lista de Perguntas</h5>
-        <div class="card-body">
-          <h6>Nenhuma pergunta adicionada até o momento</h6>
-        </div>
-      </div>
-      <div class="mb-5 mt-5 row">
-        <div class="col-md-6">
-          <a href="../quiz/cadastro.php" class="btn btn-secondary btn-action w-100">Cancelar</a>
-        </div>
-        <div class="col-md-6">
-          <button class="btn btn-primary btn-action w-100">SALVAR</button>
+          <div class="card">
+            <h5 class="card-header card-quiz">Perguntas</h5>
+            <div class="card-body">
+              <input class="form-control w-100 d-inline link"
+                     placeholder="Coloque o link da imagem aqui..."
+                     name="link">
+              <input class="form-control w-100 d-inline pergunta" placeholder="Pergunta" name="pergunta">
+              <table style="width:100%">
+                <tr>
+                  <th>Alternativa</th>
+                  <th>Correta</th>
+                </tr>
+                <tr id="alternativa">
+                  <td>
+                    <input class="form-control w-100 d-inline alternativa">
+                    <input class="form-control w-100 d-inline alternativa">
+                    <input class="form-control w-100 d-inline alternativa">
+                    <input class="form-control w-100 d-inline alternativa">
+                  </td>
+                  <td>
+                    <input name="resposta" class="resposta d-inline check5" type="checkbox">
+                    <input name="resposta" class="resposta d-inline check6" type="checkbox">
+                    <input name="resposta" class="resposta d-inline check7" type="checkbox">
+                    <input name="resposta" class="resposta d-inline check8" type="checkbox">
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-header card-quiz">Perguntas</h5>
+            <div class="card-body">
+              <input class="form-control w-100 d-inline link"
+                     placeholder="Coloque o link da imagem aqui..."
+                     name="link">
+              <input class="form-control w-100 d-inline pergunta" placeholder="Pergunta" name="pergunta">
+              <table style="width:100%">
+                <tr>
+                  <th>Alternativa</th>
+                  <th>Correta</th>
+                </tr>
+                <tr id="alternativa">
+                  <td>
+                    <input class="form-control w-100 d-inline alternativa">
+                    <input class="form-control w-100 d-inline alternativa">
+                    <input class="form-control w-100 d-inline alternativa">
+                    <input class="form-control w-100 d-inline alternativa">
+                  </td>
+                  <td>
+                    <input name="resposta" class="resposta d-inline check9" type="checkbox">
+                    <input name="resposta" class="resposta d-inline check10" type="checkbox">
+                    <input name="resposta" class="resposta d-inline check11" type="checkbox">
+                    <input name="resposta" class="resposta d-inline check12" type="checkbox">
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <button class="btn btn-primary mt-20" onclick="return salvarPerguntas()">salvar</button>
 </div>
 </body>
 <script>
+  function salvarPerguntas () {
+    let quiz_id = localStorage.getItem('quiz_id')
+    let error = false
+    let links = []
+    let todasPerguntas = []
+    let alternativas = [];
+    let perguntas = []
 
-  function adicionarAlternativa(){
-    $("table").append(
-      "<tr id=\"alternativa\">\n" +
-      "<div>\n" +
-      " <td><input class=\"form-control w-100 d-inline alternativa\" name=\"alternativa\" placeholder=\"Alternativa\"></td>\n" +
-      "<td><input name=\"resposta\" class=\"resposta\" type=\"checkbox\"></td>\n" +
-      "</div>\n" +
-      "</tr>");
-  }
+    $(".link").each(function(){
 
-  function salvarPergunta () {
-    let link = $('input[name=link]').val()
-    let pergunta = $('input[name=pergunta]').val()
-    alternativas = [];
-    $(".alternativa").each(function(){
-      alternativas.push($(this).val());
+      if ($(this).val() === "") {
+        error = true
+        alert ('Preencha todos os campos corretamente')
+        return false
+      }
+
+      links.push($(this).val());
     });
 
-    if (link === '' || pergunta === '' || alternativas.length === 0) {
-      alert ('Preencha todos os campos corretamente')
-    } else {
-      $.ajax ({
-        type: 'POST',
-        dataType: 'html',
-        url: 'index.php',
-        data: {link: link, pergunta: pergunta, alternativas: alternativas, acao: 'inserir'},
-        success: function (msg)
-        {
-          alert(msg)
-        },
-        error: function (msg) {
-          alert(msg)
+
+    if (!error) {
+
+      $(".pergunta").each(function () {
+
+        if ($(this).val() === "") {
+          error = true
+          alert('Preencha todos os campos corretamente')
+          return false
         }
-      })
+
+        todasPerguntas.push($(this).val());
+      });
+    }
+
+    for (let count = 0; count < 3; count++) {
+      let obj = {link: links[count], pergunta: todasPerguntas[count]}
+      perguntas.push(obj)
+    }
+
+    if (!error) {
+      $(".alternativa").each(function () {
+
+        if ($(this).val() === "") {
+          error = true
+          alert('Preencha todos os campos corretamente')
+          return false
+        }
+
+        let obj = {alternativa: $(this).val(), check: false}
+        alternativas.push(obj);
+      });
+    }
+    if (!error) {
+
+      alternativas[0].check = $('.check1').is(':checked')
+      alternativas[1].check = $('.check2').is(':checked')
+      alternativas[2].check = $('.check3').is(':checked')
+      alternativas[3].check = $('.check4').is(':checked')
+      alternativas[4].check = $('.check5').is(':checked')
+      alternativas[5].check = $('.check6').is(':checked')
+      alternativas[6].check = $('.check7').is(':checked')
+      alternativas[7].check = $('.check8').is(':checked')
+      alternativas[8].check = $('.check9').is(':checked')
+      alternativas[9].check = $('.check10').is(':checked')
+      alternativas[10].check = $('.check11').is(':checked')
+      alternativas[11].check = $('.check12').is(':checked')
+    }
+
+    if (!error) {
+      if (!quiz_id) {
+        alert('Não há ID do quiz em que você deseja cadastrar as perguntas')
+      } else {
+        $.ajax({
+          type: 'POST',
+          dataType: 'html',
+          url: 'index.php',
+          data: {perguntas: perguntas, alternativas: alternativas, quiz_id: quiz_id, acao: 'inserir'},
+          success: function (msg) {
+            alert(msg)
+            window.location.href = "/meuQuiz/resultado/cadastro.php"
+          },
+          error: function (msg) {
+            alert(msg)
+          }
+        })
+      }
     }
     return false
   }

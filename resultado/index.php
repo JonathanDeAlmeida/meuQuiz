@@ -4,11 +4,10 @@ $acao = isset($_REQUEST['acao'])?$_REQUEST['acao']:'cadastro';
 
 switch($acao){
     case 'inserir':
-        $nome = $_POST['nome'];
-        $login = $_POST['login'];
-        $senha = $_POST['senha'];
+        $resultados = $_POST['resultados'];
+        $quiz_id = $_POST['quiz_id'];
 
-        $mensagem = inserirUsuario($nome, $login, $senha);
+        $mensagem = inserirResultados($resultados, $quiz_id);
         echo $mensagem;
         break;
     case 'cadastro':
