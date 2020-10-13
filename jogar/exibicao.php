@@ -14,11 +14,12 @@
     <meta charset="utf-8">
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../estilo/estilo.css" rel="stylesheet">
+    <script src="biblioteca.js"></script>
 </head>
 <body>
 <?php
 include "../template/menu.php";
-$perguntaId = 2;
+$perguntaId = 1;
 ?>
 
 <div class="container mt-70">
@@ -29,24 +30,29 @@ $perguntaId = 2;
 
                 <?php
                 $cont = 0;
-                foreach ($quizJson->pergunta as $pergunta){ ?>
+                foreach ($quizJson->pergunta as $pergunta) { ?>
                     <div class="btn-group mr-1">
-                        <button type="button" class="btn btn-position"><?=$cont+1 ?></button>
+                        <button type="button" class="btn btn-position"><?= $cont + 1 ?></button>
                     </div>
-                <?php $cont++; } ?>
+                    <?php $cont++;
+                } ?>
 
             </div>
 
             <img class="w-100"
-                 src="<?=$quizJson->pergunta[$perguntaId]->perguntaImagem?>>"
+                 src="<?= $quizJson->pergunta[$perguntaId]->perguntaImagem ?>>"
                  height="300"/>
             <div class="title-quiz">
                 <?= $quizJson->pergunta[$perguntaId]->perguntaTitulo ?>
             </div>
             <div class="answer-quiz">
-                <?php foreach ($quizJson->pergunta[$perguntaId]->alternativa as $alternativa){ ?>
-                    <button class="btn-answer"><?=$alternativa->alternativaNome ?></button>
-                <?php } ?>
+                <?php
+                $contador = 0;
+                foreach ($quizJson->pergunta[$perguntaId]->alternativa as $alternativa) { ?>
+                    <button onclick=" verificarResposta(quizJson.pergunta[<?= $perguntaId ?>].alternativa[<?= $contador ?>].certo)"
+                            class="btn-answer"><?= $alternativa->alternativaNome ?></button>
+                    <?php $contador++;
+                } ?>
             </div>
         </div>
     </div>
