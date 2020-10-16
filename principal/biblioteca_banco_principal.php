@@ -72,7 +72,7 @@ function exibirQuizzes(){
     $quiz = listarQuizzes();
     $retorno = "";
     foreach ($quiz as $quizzes){
-        $retorno = $retorno."<div class='col-md-6'>
+        $retorno = $retorno."<div class='col-md-6 mb-3'>
                                 <img class='w-100 img-quiz'
                                      src='$quizzes[imagem]'
                                      height='320'/>

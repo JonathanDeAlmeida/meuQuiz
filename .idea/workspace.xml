@@ -3,16 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="72c52290-c12d-4f75-93a6-b78e8dc34226" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BancoDeDadosMeuQuiz.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BancoDeDadosMeuQuiz.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php" beforeDir="false" afterPath="$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pergunta/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/pergunta/cadastro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pergunta/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/pergunta/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultado/biblioteca_banco_resultado.php" beforeDir="false" afterPath="$PROJECT_DIR$/resultado/biblioteca_banco_resultado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/principal/biblioteca_banco_principal.php" beforeDir="false" afterPath="$PROJECT_DIR$/principal/biblioteca_banco_principal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/cadastro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resultado/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/resultado/cadastro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultado/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/resultado/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/menu.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,121 +34,15 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>logo-register</find>
-      <find>adminis</find>
-      <find>password</find>
-      <find>alert</find>
-      <find>login.php</find>
-      <find>../login/login.php</find>
-      <find>adicionarPergunta</find>
-      <find>exibirQuiz</find>
-      <find>adicionarAlternativa</find>
-      <find>$alternativa</find>
-      <find>session_start</find>
-      <find>Quiz cadastrado</find>
-      <find>session_start()</find>
-      <find>window.location</find>
-      <find>links</find>
-      <find>todasPerguntas</find>
-      <find>$id</find>
-      <find>todasPerguntas</find>
-      <find>salvarResultado</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/estilo.css" />
-        <option value="$PROJECT_DIR$/Telas que precisam de programação/criar.html" />
-        <option value="$PROJECT_DIR$/Telas que precisam de programação/criarPergunta.html" />
-        <option value="$PROJECT_DIR$/Telas que precisam de programação/criarResultado.html" />
-        <option value="$PROJECT_DIR$/Telas que precisam de programação/principal.html" />
-        <option value="$PROJECT_DIR$/Telas que precisam de programação/responder.html" />
-        <option value="$PROJECT_DIR$/Telas que precisam de programação/resultado.html" />
-        <option value="$PROJECT_DIR$/estilo/estilo.css" />
-        <option value="$PROJECT_DIR$/login/cadastro.php" />
-        <option value="$PROJECT_DIR$/login/login.php" />
-        <option value="$PROJECT_DIR$/login/biblioteca_banco_login.php" />
-        <option value="$PROJECT_DIR$/login/index.php" />
-        <option value="$PROJECT_DIR$/resposta/biblioteca_banco_resposta.php" />
-        <option value="$PROJECT_DIR$/resposta/exibicao.php" />
-        <option value="$PROJECT_DIR$/resultado/exibicao.php" />
-        <option value="$PROJECT_DIR$/resposta/cadastro.php" />
-        <option value="$PROJECT_DIR$/resposta/index.php" />
-        <option value="$PROJECT_DIR$/principal/index.php" />
-        <option value="$PROJECT_DIR$/principal/biblioteca_banco_principal.php" />
-        <option value="$PROJECT_DIR$/quiz/index.php" />
-        <option value="$PROJECT_DIR$/principal/principal.php" />
-        <option value="$PROJECT_DIR$/quiz/cadastro.php" />
-        <option value="$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php" />
-        <option value="$PROJECT_DIR$/pergunta/index.php" />
-        <option value="$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php" />
-        <option value="$PROJECT_DIR$/template/menu.php" />
-        <option value="$PROJECT_DIR$/resultado/index.php" />
-        <option value="$PROJECT_DIR$/resultado/biblioteca_banco_resultado.php" />
-        <option value="$PROJECT_DIR$/pergunta/cadastro.php" />
-        <option value="$PROJECT_DIR$/resultado/cadastro.php" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="749" />
-    <option name="y" value="1" />
-    <option name="width" value="639" />
-    <option name="height" value="735" />
-  </component>
+  <component name="ProjectId" id="1ivzrJp9RbMVKX7fPCiFRNc7qIs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="meuQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meuQuiz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meuQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meuQuiz" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meuQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meuQuiz" type="462c0819:PsiDirectoryNode" />
-              <item name="resultado" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meuQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meuQuiz" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -171,15 +62,15 @@
       <recent name="C:\wamp\www\meuQuiz\quiz" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -203,273 +94,17 @@
       <workItem from="1601950096968" duration="2089000" />
       <workItem from="1602109370536" duration="13636000" />
       <workItem from="1602194842433" duration="16773000" />
+      <workItem from="1602803060942" duration="4595000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56609000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12934947" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297587" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.61126006" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendas/vendaAdministrador.php" />
-    <entry file="file://$PROJECT_DIR$/vendas/js/script.js" />
-    <entry file="file://$PROJECT_DIR$/jquery-3.5.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="1" column="81638" selection-start-line="1" selection-start-column="81638" selection-end-line="1" selection-end-column="81638" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/estilo/estilo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resposta/biblioteca_banco_resposta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resposta/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resultado/exibicao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resposta/cadastro.php" />
-    <entry file="file://$PROJECT_DIR$/resposta/exibicao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BancoDeDadosMeuQuiz.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Convidado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Quiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/class/UsuarioCadastrado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="121" column="18" selection-start-line="121" selection-start-column="18" selection-end-line="121" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/biblioteca_banco_login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/principal/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login/cadastro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="46" column="46" lean-forward="true" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="2040" column="24" selection-start-line="2040" selection-start-column="9" selection-end-line="2040" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/principal/principal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/principal/biblioteca_banco_principal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/biblioteca.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/cadastro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="1012" column="9" selection-start-line="1012" selection-start-column="9" selection-end-line="1012" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="979" column="9" selection-start-line="979" selection-start-column="9" selection-end-line="979" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resultado/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resultado/biblioteca_banco_resultado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pergunta/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pergunta/cadastro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="193" column="7" lean-forward="true" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resultado/cadastro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="122" column="23" lean-forward="true" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602807456515">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1602807456515" />
   </component>
 </project>
