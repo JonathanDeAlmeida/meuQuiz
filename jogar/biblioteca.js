@@ -1,10 +1,11 @@
 function verificarResposta(alternativa){
-    if(alternativa == 1){
+    if(alternativa === "1"){
         alert('certo');
     }else{
         alert('errado');
     }
     definirIdPergunta();
+    alterarImagem(perguntaId1);
     alterarTexto(perguntaId1);
 }
 
@@ -24,5 +25,10 @@ function alterarTexto(perguntaId1){
     }
     } else{
         alert('Você terminou o quiz!');
+    }
+}
+function alterarImagem(perguntaId1){
+    if(perguntaId1 <= 2) {
+        document.getElementById('imagem').src = quizJson.pergunta[perguntaId1].perguntaImagem;
     }
 }

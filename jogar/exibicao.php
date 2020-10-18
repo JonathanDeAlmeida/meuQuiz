@@ -42,35 +42,33 @@ $perguntaId = 0;
             </div>
 
             <img class="w-100"
-                 src="<?= $quizJson->pergunta[$perguntaId]->perguntaImagem ?>>"
-                 height="300"/>
+                 src="<?= $quizJson->pergunta[$perguntaId]->perguntaImagem ?>"
+                 height="300"
+                 id="imagem"/>
             <div class="title-quiz" id="pergunta">
                 <script type="text/javascript">
-                document.write(quizJson.pergunta[perguntaId1].perguntaTitulo);
+                    document.write(quizJson.pergunta[perguntaId1].perguntaTitulo);
                 </script>
             </div>
             <div class="answer-quiz" id="respostas">
                 <?php
                 $contador = 0;
                 foreach ($quizJson->pergunta[$perguntaId]->alternativa as $alternativa) { ?>
-                    <button id="0" onclick="verificarResposta(quizJson.pergunta[perguntaId1].alternativa[<?= $contador ?>].certo)"
+                    <button id="<?= $contador ?>"
+                            onclick="verificarResposta(quizJson.pergunta[perguntaId1].alternativa[<?= $contador ?>].certo)"
                             class="btn-answer">
 
 
-                            
+                        <script type="text/javascript">
+                            document.write(quizJson.pergunta[perguntaId1].alternativa[contador].alternativaNome);
+                            contador++;
+                            if (contador >= 4) {
+                                contador = 0;
+                            }
+                        </script>
 
-                            <script type="text/javascript">
-                                 document.write(quizJson.pergunta[perguntaId1].alternativa[contador].alternativaNome);
-                                 contador++;
-                                 if(contador >= 4){
-                                     contador = 0;
-                                 }
-                                 document.getElementById('0').id = contador.toString();
-                            </script>
-    
-                            
-                            
-                            </button>
+
+                    </button>
                     <?php $contador++;
                 } ?>
 
