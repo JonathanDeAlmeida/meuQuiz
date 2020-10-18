@@ -52,7 +52,7 @@ function verificaUsuario($login, $senha)
 }
 function listarQuizzes(){
     $conexao = obterConexao();
-    $sql = "SELECT id, titulo, descricao, imagem, criador_id FROM quiz";
+    $sql = "SELECT id, titulo, descricao, imagem, criador_id FROM quiz ORDER BY id desc";
     $resultado = mysqli_fetch_all(mysqli_query($conexao,$sql));
     $retorno = array();
     $cont = 0;
