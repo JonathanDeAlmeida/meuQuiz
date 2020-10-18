@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72c52290-c12d-4f75-93a6-b78e8dc34226" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BancoDeDadosMeuQuiz.txt" beforeDir="false" afterPath="$PROJECT_DIR$/BancoDeDadosMeuQuiz.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php" beforeDir="false" afterPath="$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pergunta/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/pergunta/cadastro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/principal/biblioteca_banco_principal.php" beforeDir="false" afterPath="$PROJECT_DIR$/principal/biblioteca_banco_principal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/cadastro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultado/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/resultado/cadastro.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -94,7 +89,7 @@
       <workItem from="1601950096968" duration="2089000" />
       <workItem from="1602109370536" duration="13636000" />
       <workItem from="1602194842433" duration="16773000" />
-      <workItem from="1602803060942" duration="4595000" />
+      <workItem from="1602803060942" duration="5037000" />
     </task>
     <servers />
   </component>
@@ -102,9 +97,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602807456515">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1603031295903">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1602807456515" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1603031295903" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602807767040">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1602807767040" />
   </component>
 </project>
