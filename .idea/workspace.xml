@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72c52290-c12d-4f75-93a6-b78e8dc34226" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php" beforeDir="false" afterPath="$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pergunta/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/pergunta/cadastro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pergunta/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/pergunta/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultado/biblioteca_banco_resultado.php" beforeDir="false" afterPath="$PROJECT_DIR$/resultado/biblioteca_banco_resultado.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultado/cadastro.php" beforeDir="false" afterPath="$PROJECT_DIR$/resultado/cadastro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultado/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/resultado/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/template/menu.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +32,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php">
+        <entry file="file://$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="308">
+              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -101,7 +93,6 @@
         <option value="$PROJECT_DIR$/quiz/index.php" />
         <option value="$PROJECT_DIR$/principal/principal.php" />
         <option value="$PROJECT_DIR$/quiz/cadastro.php" />
-        <option value="$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php" />
         <option value="$PROJECT_DIR$/pergunta/index.php" />
         <option value="$PROJECT_DIR$/pergunta/biblioteca_banco_pergunta.php" />
         <option value="$PROJECT_DIR$/template/menu.php" />
@@ -109,10 +100,11 @@
         <option value="$PROJECT_DIR$/resultado/biblioteca_banco_resultado.php" />
         <option value="$PROJECT_DIR$/pergunta/cadastro.php" />
         <option value="$PROJECT_DIR$/resultado/cadastro.php" />
+        <option value="$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="749" />
     <option name="y" value="1" />
     <option name="width" value="639" />
@@ -202,18 +194,19 @@
       <workItem from="1601593036445" duration="3320000" />
       <workItem from="1601950096968" duration="2089000" />
       <workItem from="1602109370536" duration="13636000" />
-      <workItem from="1602194842433" duration="16773000" />
+      <workItem from="1602194842433" duration="17207000" />
+      <workItem from="1606174211341" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56609000" />
+    <option name="totallyTimeSpent" value="57078000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12934947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12934947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -226,7 +219,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297587" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.61126006" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.61119515" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -443,13 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pergunta/cadastro.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -468,6 +454,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/biblioteca_banco_quiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
         </state>
       </provider>
     </entry>
