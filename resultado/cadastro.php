@@ -53,15 +53,19 @@ include "../template/menu.php";
                         placeholder="Escreva descrição..."></textarea>
 
               <div class="mt-3">
-                Esse será o resultado caso <strong>TODAS</strong> pergunta seja acertada.
+                Esse será o resultado caso <strong>TODAS</strong> perguntas sejam acertadas.
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+      <div class="row mt-4">
+          <div class="col-md-12">
+              <button class="btn btn-primary btn-action w-100" onclick="return salvarResultado()">SALVAR</button>
+          </div>
+      </div>
   </div>
-  <button class="btn btn-primary mt-20" onclick="return salvarResultado()">salvar</button>
 </div>
 </body>
 <script>
@@ -126,6 +130,7 @@ include "../template/menu.php";
           data: {resultados: resultados, quiz_id: quiz_id, acao: 'inserir'},
           success: function (msg) {
             alert(msg)
+            window.location.href = "/meuQuiz/principal/principal.php"
           },
           error: function (msg) {
             alert(msg)

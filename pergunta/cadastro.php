@@ -20,22 +20,46 @@ include "../template/menu.php";
               <input class="form-control w-100 d-inline pergunta" placeholder="Pergunta" name="pergunta">
               <table style="width:100%">
                 <tr>
-                  <th>Alternativa</th>
-                  <th>Correta</th>
+                  <th>
+                      <span>Alternativa</span>
+                      <span class="float-right">Correta</span>
+                  </th>
                 </tr>
                 <tr id="alternativa">
-                  <td>
-                    <input class="form-control w-100 d-inline alternativa">
-                    <input class="form-control w-100 d-inline alternativa">
-                    <input class="form-control w-100 d-inline alternativa">
-                    <input class="form-control w-100 d-inline alternativa">
-                  </td>
-                  <td>
-                    <input name="resposta" class="resposta d-inline check1" type="checkbox">
-                    <input name="resposta" class="resposta d-inline check2" type="checkbox">
-                    <input name="resposta" class="resposta d-inline check3" type="checkbox">
-                    <input name="resposta" class="resposta d-inline check4" type="checkbox">
-                  </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check1" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check2" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check3" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check4" type="checkbox">
+                            </div>
+                        </div>
+                    </td>
                 </tr>
               </table>
             </div>
@@ -49,22 +73,46 @@ include "../template/menu.php";
               <input class="form-control w-100 d-inline pergunta" placeholder="Pergunta" name="pergunta">
               <table style="width:100%">
                 <tr>
-                  <th>Alternativa</th>
-                  <th>Correta</th>
+                    <th>
+                        <span>Alternativa</span>
+                        <span class="float-right">Correta</span>
+                    </th>
                 </tr>
                 <tr id="alternativa">
-                  <td>
-                    <input class="form-control w-100 d-inline alternativa">
-                    <input class="form-control w-100 d-inline alternativa">
-                    <input class="form-control w-100 d-inline alternativa">
-                    <input class="form-control w-100 d-inline alternativa">
-                  </td>
-                  <td>
-                    <input name="resposta" class="resposta d-inline check5" type="checkbox">
-                    <input name="resposta" class="resposta d-inline check6" type="checkbox">
-                    <input name="resposta" class="resposta d-inline check7" type="checkbox">
-                    <input name="resposta" class="resposta d-inline check8" type="checkbox">
-                  </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check5" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check6" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check7" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check8" type="checkbox">
+                            </div>
+                        </div>
+                    </td>
                 </tr>
               </table>
             </div>
@@ -78,31 +126,59 @@ include "../template/menu.php";
               <input class="form-control w-100 d-inline pergunta" placeholder="Pergunta" name="pergunta">
               <table style="width:100%">
                 <tr>
-                  <th>Alternativa</th>
-                  <th>Correta</th>
+                    <th>
+                        <span>Alternativa</span>
+                        <span class="float-right">Correta</span>
+                    </th>
                 </tr>
                 <tr id="alternativa">
-                  <td>
-                    <input class="form-control w-100 d-inline alternativa">
-                    <input class="form-control w-100 d-inline alternativa">
-                    <input class="form-control w-100 d-inline alternativa">
-                    <input class="form-control w-100 d-inline alternativa">
-                  </td>
-                  <td>
-                    <input name="resposta" class="resposta d-inline check9" type="checkbox">
-                    <input name="resposta" class="resposta d-inline check10" type="checkbox">
-                    <input name="resposta" class="resposta d-inline check11" type="checkbox">
-                    <input name="resposta" class="resposta d-inline check12" type="checkbox">
-                  </td>
+                    <td>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check9" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check10" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check11" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <input class="form-control w-100 d-inline alternativa">
+                            </div>
+                            <div class="col-md-2 mt-3">
+                                <input name="resposta" class="resposta d-inline check12" type="checkbox">
+                            </div>
+                        </div>
+                    </td>
                 </tr>
               </table>
             </div>
           </div>
         </div>
+      <div class="row mt-4">
+          <div class="col-md-12">
+              <button class="btn btn-primary btn-action w-100" onclick="return salvarPerguntas()">SALVAR</button>
+          </div>
+      </div>
       </div>
     </div>
   </div>
-  <button class="btn btn-primary mt-20" onclick="return salvarPerguntas()">salvar</button>
 </div>
 </body>
 <script>

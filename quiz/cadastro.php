@@ -43,7 +43,7 @@
             </div>
             <div class="mb-5 mt-5 row">
                 <div class="col-md-6">
-                    <a href="../principal/principal.php" class="btn btn-secondary btn-action w-100">Cancelar</a>
+                    <a style="padding-right: 55px" href="../principal/principal.php" class="btn btn-secondary btn-action w-100">Cancelar</a>
                 </div>
                 <div class="col-md-6">
                     <button class="btn btn-primary btn-action w-100">SALVAR</button>

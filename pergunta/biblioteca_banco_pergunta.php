@@ -47,7 +47,7 @@ function inserirPergunta($perguntas, $alternativas, $quiz_id) {
     if ($resultadoDois === false){
         return "Erro ao cadastrar a pergunta";
     } else {
-        return "Pergunta cadastrada com sucesso";
+        return "Perguntas cadastradas com sucesso";
     }
 }
 

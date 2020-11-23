@@ -52,7 +52,7 @@ function verificaUsuario($login, $senha)
 }
 function listarQuizzes(){
     $conexao = obterConexao();
-    $sql = "SELECT id, titulo, descricao, imagem, criador_id FROM quiz";
+    $sql = "SELECT id, titulo, descricao, imagem, criador_id FROM quiz ORDER BY id desc";
     $resultado = mysqli_fetch_all(mysqli_query($conexao,$sql));
     $retorno = array();
     $cont = 0;
@@ -72,13 +72,15 @@ function exibirQuizzes(){
     $quiz = listarQuizzes();
     $retorno = "";
     foreach ($quiz as $quizzes){
-        $retorno = $retorno."<div class='col-md-6'>
+        $retorno = $retorno."<div class='col-md-6 mb-3'>
                                 <img class='w-100 img-quiz'
                                      src='$quizzes[imagem]'
                                      height='320'/>
                                 <div class='title-quiz'>
                                     $quizzes[titulo]
-                                    <button class='float-right btn btn-primary'>INICIAR</button>
+                                    <form method='post' action='../jogar/index.php'>
+                                    <button name='quizId' value='$quizzes[id]' class='float-right btn btn-primary'>INICIAR</button>
+                                    </form>
                                 </div>
                             </div>";
     }

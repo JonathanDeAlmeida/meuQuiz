@@ -23,6 +23,7 @@
               success: function (msg)
               {
                 alert(msg)
+                window.location.href = "/meuQuiz/login/login.php"
               },
               error: function (msg) {
                 alert(msg)
