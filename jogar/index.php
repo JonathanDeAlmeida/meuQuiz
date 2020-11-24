@@ -14,11 +14,12 @@ switch($acao){
     case 'exibicao':
         include("exibicao.php");
         break;
-    case 'verificaLogin':
+    case 'verificarResposta':
         if (isset($_POST)) {
-            $login = $_POST['login'];
-            $senha = $_POST['senha'];
-            $mensagem = verificaUsuario($login, $senha);
+            $alternativa= $_POST['alternativa'];
+            $quiz_id = $_POST['quiz_id'];
+            $usuario_id = $_POST['usuario_id'];
+            $mensagem = verificarResposta($alternativa, $quiz_id, $usuario_id);
             echo $mensagem;
         }
         break;

@@ -50,11 +50,29 @@ function listarQuiz($id){
     }
     return json_encode($quiz);
 }
-function verificarResposta($alternativa){
-    if($alternativa){
-        $mensagem = "alert('certo')";
-    }else{
-        $mensagem = "alert('erado')";
+
+function verificarResposta($alternativa, $quizId, $usuario_id){
+
+    $conexao = obterConexao();
+
+    $sql = "SELECT id, pontos, usuario_id, quiz_id FROM pontos WHERE usuario_id = '$usuario_id' and quiz_id = '$quizId'";
+
+    $resultado = @mysqli_query($conexao, $sql);
+
+    $colunas = mysqli_num_rows($resultado);
+
+    if ($colunas < 1){
+        $pontos = intval($alternativa);
+        $sql = "INSERT INTO pontos (pontos, usuario_id, quiz_id) VALUES ('$pontos', '$usuario_id', '$quizId')";
+        @mysqli_query($conexao,$sql);
+
+    } else {
+        $object_pontos = mysqli_fetch_object($resultado);
+        $pontos = intval($alternativa) + intval($object_pontos->pontos);
+        echo $pontos;
+        $sql = "UPDATE pontos SET pontos = '$pontos' WHERE id = '$object_pontos->id'";
+        @mysqli_query($conexao,$sql);
     }
-    return $mensagem;
+
+    return "sucesso";
 };

@@ -1,5 +1,7 @@
 <head>
     <?php
+    session_start();
+    $id = $_SESSION['id'];
     $quizId = $_POST['quizId'];
     $quiz = listarQuiz($quizId);
     $quizJson = json_decode($quiz)
@@ -28,19 +30,6 @@ $perguntaId = 0;
     <div class="row justify-content-center">
         <div class="col-md-8">
 
-            <div class="btn-toolbar position-questions">
-
-                <?php
-                $cont = 0;
-                foreach ($quizJson->pergunta as $pergunta) { ?>
-                    <div class="btn-group mr-1">
-                        <button type="button" class="btn btn-position"><?= $cont + 1 ?></button>
-                    </div>
-                    <?php $cont++;
-                } ?>
-
-            </div>
-
             <img class="w-100"
                  src="<?= $quizJson->pergunta[$perguntaId]->perguntaImagem ?>"
                  height="300"
@@ -55,7 +44,7 @@ $perguntaId = 0;
                 $contador = 0;
                 foreach ($quizJson->pergunta[$perguntaId]->alternativa as $alternativa) { ?>
                     <button id="<?= $contador ?>"
-                            onclick="verificarResposta(quizJson.pergunta[perguntaId1].alternativa[<?= $contador ?>].certo)"
+                            onclick="verificarResposta(quizJson.pergunta[perguntaId1].alternativa[<?= $contador ?>].certo, <?=$quizId?>, <?=$id?>)"
                             class="btn-answer">
 
 

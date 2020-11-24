@@ -1,4 +1,14 @@
-function verificarResposta(alternativa){
+function verificarResposta(alternativa, quiz_id, usuario_id){
+    $.ajax({
+        type: 'POST',
+        dataType: 'html',
+        url: 'index.php',
+        data: {alternativa: alternativa, quiz_id: quiz_id, usuario_id: usuario_id, acao: 'verificarResposta'},
+        success: function (msg) {
+        },
+        error: function (msg) {
+        }
+    })
     if(alternativa === "1"){
         alert('certo');
     }else{
