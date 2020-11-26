@@ -4,6 +4,35 @@ function obterConexao(){
     return $conexao;
 }
 
+function pegarResultado ($user_id) {
+
+    $conexao = obterConexao();
+
+    $sql = "SELECT id, pontos, quiz_id FROM pontos WHERE usuario_id = '$user_id'";
+
+    $resultado = @mysqli_query($conexao,$sql);
+
+    $object_pontos = mysqli_fetch_object($resultado);
+
+    if (intval($object_pontos->pontos) > 3) {
+        $pontos = 3;
+    } else {
+        $pontos = $object_pontos->pontos;
+    }
+
+    $sql = "SELECT titulo, descricao, imagem FROM resultado WHERE pontos = '$pontos' and quiz_id = '$object_pontos->quiz_id'";
+
+    $resultadoDois = @mysqli_query($conexao,$sql);
+
+    $object_resultado = mysqli_fetch_object($resultadoDois);
+
+    $sql = "DELETE FROM pontos WHERE id = '$object_pontos->id'";
+
+    @mysqli_query($conexao,$sql);
+
+    return $object_resultado;
+}
+
 function inserirResultados ($resultados, $quiz_id) {
 
     $conexao = obterConexao();

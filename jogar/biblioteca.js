@@ -34,7 +34,7 @@ function alterarTexto(perguntaId1){
         }
     }
     } else{
-        alert('Você terminou o quiz!');
+        window.location.href = "/meuQuiz/resultado/exibicao.php"
     }
 }
 function alterarImagem(perguntaId1){
